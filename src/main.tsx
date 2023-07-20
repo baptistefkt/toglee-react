@@ -10,8 +10,8 @@ const tolgee = Tolgee()
   .use(
     DevTools({
       credentials: {
-        apiUrl: 'https://app.tolgee.io',
-        apiKey: 'tgpak_gmydons7nnvgcntumzrtc3tvgizws3ztorshc4jynn2ds3zxou',
+        apiUrl: import.meta.env.VITE_TOLGEE_API_URL,
+        apiKey: import.meta.env.VITE_TOLGEE_API_KEY,
         projectId: '3076',
       },
     }),
@@ -19,8 +19,8 @@ const tolgee = Tolgee()
   .use(FormatSimple())
   .init({
     language: 'en',
-    apiUrl: 'https://app.tolgee.io',
-    apiKey: 'tgpak_gmydons7nnvgcntumzrtc3tvgizws3ztorshc4jynn2ds3zxou',
+    apiUrl: import.meta.env.VITE_TOLGEE_API_URL,
+    apiKey: import.meta.env.VITE_TOLGEE_API_KEY,
   });
 
 ReactDOM.render(
